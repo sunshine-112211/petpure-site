@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>宠净 PetPure — 全自动智能猫砂盆</title>
   <meta name="description" content="宠净 PetPure 全自动智能猫砂盆：自动清理、抑菌除臭、全方位安全守护与 APP 智能监测，为现代养猫家庭解放双手、净味无忧。">
+  <meta property="og:title" content="宠净 PetPure — 全自动智能猫砂盆">
+  <meta property="og:description" content="自动清理、抑菌除臭、智能监测，给养猫家庭更多陪伴时间。">
+  <meta property="og:image" content="/assets/og-card.png">
   <style>
     /* Cartoon, friendly style for 30-40y pet owners */
     :root{
@@ -14,20 +17,21 @@
       --accent: #FF9F56; /* warm orange */
       --muted: #6b7280;
       --radius: 14px;
-      --shadow: 0 8px 24px rgba(11,157,118,0.08);
+      --shadow: 0 10px 30px rgba(11,157,118,0.08);
       --soft-shadow: 0 6px 18px rgba(0,0,0,0.06);
     }
     html,body{height:100%;}
     body{font-family: 'Noto Sans', 'Segoe UI', Roboto, -apple-system, Arial;line-height:1.6;color:#222;margin:0;background:linear-gradient(180deg,var(--bg),#fff);}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .container{max-width:1100px;margin:24px auto;padding:28px}
 
-    /* Hero */
-    header.hero{background:linear-gradient(90deg,#fff 0%, rgba(255,255,255,0.9) 60%);padding:48px;border-radius:20px;box-shadow:var(--shadow);display:flex;gap:28px;align-items:center}
-    h1{font-size:34px;margin:0 0 10px;color:var(--primary);font-weight:700}
+    /* Header card */
+    header.hero{background:linear-gradient(90deg,#fff 0%, rgba(255,255,255,0.95) 60%);padding:28px;border-radius:20px;box-shadow:var(--shadow);display:flex;gap:24px;align-items:center}
+    h1{font-size:32px;margin:0 0 10px;color:var(--primary);font-weight:800}
     p.lead{font-size:16px;color:var(--muted);margin:0 0 18px}
-    .cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:var(--soft-shadow)}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:var(--soft-shadow);margin-right:10px}
+    .cta.secondary{background:#fff;border:2px solid var(--accent);color:var(--accent)}
 
-    .features{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
+    .features{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}
     .card{background:var(--card);border-radius:12px;padding:16px;flex:1;min-width:220px;box-shadow:0 6px 18px rgba(0,0,0,0.04);border:1px solid rgba(11,157,118,0.06)}
 
     .section{padding:36px 0;border-bottom:0}
@@ -41,32 +45,41 @@
     .product-hero{display:flex;gap:24px;align-items:center}
     .illustration{flex:1;background:linear-gradient(135deg,#fff6f0,#f7fbf9);border-radius:18px;padding:18px;border:2px solid rgba(255,159,86,0.06);display:flex;align-items:center;justify-content:center}
 
-    /* decorative paw */
-    .paw{width:120px;height:120px;border-radius:50%;background:linear-gradient(180deg,var(--accent),#ffcfa6);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:var(--soft-shadow)}
+    /* mock logo */
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo .mark{width:48px;height:48px;border-radius:12px;background:linear-gradient(180deg,var(--primary),#0a8c66);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+    .logo .text{font-weight:800;color:var(--primary)}
 
-    /* responsive */
-    @media (max-width:900px){header.hero{flex-direction:column;text-align:center}.product-hero{flex-direction:column}}
+    /* testimonials */
+    .testimonials{display:flex;gap:12px;flex-wrap:wrap}
+    .t-card{background:linear-gradient(180deg,#fff,#fff);padding:14px;border-radius:12px;box-shadow:var(--soft-shadow);min-width:220px}
+
+    /* interactive */
+    .cta:hover{transform:translateY(-3px)}
+    .card:hover{transform:translateY(-4px);transition:all .18s}
+
+    /* responsive adjustments */
+    @media (max-width:900px){header.hero{flex-direction:column;text-align:center;padding:20px}.product-hero{flex-direction:column}.logo{justify-content:center}.features{flex-direction:column}.cta{width:80%}.illustration{width:220px;height:220px;margin:0 auto}}
   </style>
 </head>
 <body>
   <div class="container">
     <header class="hero">
       <div style="flex:2">
+        <div class="logo" style="margin-bottom:10px"><div class="mark">PP</div><div class="text">宠净 PetPure</div></div>
         <h1>全自动智能猫砂盆 — 解放双手，净味无忧</h1>
         <p class="lead">专为现代养猫家庭设计 · 自动清理 · 抑菌除臭 · 安全守护 · 智能监测</p>
         <a class="cta" href="#buy">立即购买</a>
+        <a class="cta secondary" href="#demo">观看演示</a>
         <div class="features" style="margin-top:18px">
           <div class="card"><strong>自动闭环清理</strong><div class="small">猫咪如厕后自动清扫并密封集便，告别手动铲屎。</div></div>
           <div class="card"><strong>全效抑菌净味</strong><div class="small">紫外抑菌 + 负离子净味，源头分解异味，家里时刻清新。</div></div>
-          <div class="card"><strong>多重安全防护</strong><div class="small">红外防夹、防卡猫、稳固防侧翻，猫咪使用更安心。</div></div>
+          <div class="card"><strong>多重安全防护</strong><div class="small">红外防夹、防卡猫、稳固防侧翻，猫咪使用更安心.</div></div>
         </div>
       </div>
       <div style="flex:1">
         <div class="illustration">
-          <div style="text-align:center">
-            <div class="paw">Pet<br>Pure</div>
-            <div style="margin-top:10px;color:var(--muted);font-size:13px">卡通示意图（可替换为产品插画）</div>
-          </div>
+          <img src="/assets/cartoon-cat.png" alt="PetPure 插画" style="width:220px;height:220px;object-fit:contain;border-radius:12px">
         </div>
       </div>
     </header>
@@ -74,6 +87,20 @@
     <section class="section">
       <h2>每天少一件烦心事</h2>
       <p>多一点陪伴猫咪的时间 — 宠净，重新定义智能养宠生活。让科技处理繁琐，让你把时间留给陪伴。</p>
+    </section>
+
+    <section class="section">
+      <h2 id="demo">产品演示</h2>
+      <p class="small">查看 60 秒快速演示，了解自动清理与 APP 交互（演示占位）。</p>
+      <div style="margin-top:12px">
+        <div style="background:#fff;border-radius:12px;padding:12px;box-shadow:var(--soft-shadow);display:flex;align-items:center;gap:12px">
+          <div style="width:80px;height:60px;background:linear-gradient(180deg,#ffe9d0,#fff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:800">▶</div>
+          <div>
+            <div style="font-weight:700">60s 快速演示</div>
+            <div class="small">展示自动清理流程、APP 推送与维护提醒。</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section">
@@ -91,34 +118,16 @@
           <h3>全场景安全防护</h3>
           <p class="small">红外防夹感应、防卡猫机制与稳固防侧翻设计，确保每一次使用安全。</p>
         </div>
-        <div class="card">
-          <h3>超低静音运行</h3>
-          <p class="small">静音电机 + 减震设计，夜间不打扰人猫休息。</p>
-        </div>
-        <div class="card">
-          <h3>APP 智能监测</h3>
-          <p class="small">远程查看使用频率、猫砂余量、集便仓状态，推送维护提醒。</p>
-        </div>
-        <div class="card">
-          <h3>大容量适配多猫</h3>
-          <p class="small">大舱体设计，适合多猫家庭，共用不拥挤；模块化结构便于拆洗。</p>
-        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>品牌理念</h2>
-      <p>我们相信，科技不是为了替代陪伴，而是让陪伴更纯粹、更轻松。宠净 PetPure，以智能科技解放养宠负担，让每一位铲屎官，都能把时间留给爱。</p>
-    </section>
-
-    <section class="section">
-      <h2>FAQ</h2>
-      <ul>
-        <li><strong>用什么猫砂？</strong> 支持主流结团猫砂：豆腐砂、膨润土等均可。</li>
-        <li><strong>耗电高吗？</strong> 低功耗设计，日常使用省电。</li>
-        <li><strong>猫咪害怕怎么办？</strong> 静音运行 + 渐进式启动，多数猫咪 1–3 天适应。</li>
-        <li><strong>质保多久？</strong> 核心部件全国联保 1 年。</li>
-      </ul>
+      <h2>用户口碑</h2>
+      <div class="testimonials">
+        <div class="t-card"><strong>李女士，34岁</strong><div class="small">“宠净让家里没有异味，我更愿意在客厅陪猫了。”</div></div>
+        <div class="t-card"><strong>张先生，38岁</strong><div class="small">“静音效果很好，夜里猫也不受惊。”</div></div>
+        <div class="t-card"><strong>周小姐，31岁</strong><div class="small">“APP 提醒很实用，再也不担心集便仓忘了清理。”</div></div>
+      </div>
     </section>
 
     <section class="section" id="buy">
